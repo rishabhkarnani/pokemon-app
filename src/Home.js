@@ -37,7 +37,8 @@ function Home() {
   // Load Pokémon on start
   useEffect(() => {
     getPokemonData();
-  }, []); 
+  }, [getPokemonData]); 
+  
 
   return (
     <div className="home-container">
